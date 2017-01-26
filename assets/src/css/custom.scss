@@ -1,0 +1,800 @@
+.span {
+  font-size: 13px;
+}
+
+.contentTabs .nav.nav-tabs {
+  display: none;
+}
+
+section.menuTabs {
+  background: #eee;
+  padding: 17px 0 0px;
+  margin: 0;
+}
+
+.home {
+    margin: 0 0 55px;
+}
+
+.nav.nav-menuTabs li {
+  text-align: center;
+  float: left;
+  a {
+    text-transform: uppercase;
+    padding: 10px 30px 5px;
+    border-bottom: 7px solid #c5c5c5;
+    color: #555;
+    cursor: pointer;
+    background: transparent;
+  }
+  &.active {
+    a {
+      border-color: #555;
+    }
+    &.destaques a {
+      border-color: #244386;
+      color: #244386;
+    }
+    &.news a {
+      border-color: #26478d;
+      color: #26478d;
+    }
+    &.videos a {
+      border-color: #ba2f7d;
+      color: #ba2f7d;
+    }
+    &.guides a {
+      border-color: #e2a235;
+      color: #e2a235;
+    }
+    &.quiz a {
+      border-color: #adaf1e;
+      color: #adaf1e;
+    }
+  }
+}
+
+.form-menuTabs {
+  input[type=text] {
+    width: 100%;
+    display: block;
+    border: 1px solid #e2e2e2;
+    box-shadow: none;
+    outline: none;
+    font-size: 15px;
+  }
+  .form-group {
+    width: 100%;
+    position: relative;
+    &:after {
+      content: '';
+      display: block;
+      width: 24px;
+      height: 24px;
+      background: url(https://s3-sa-east-1.amazonaws.com/campanha.serasaconsumidor.com.br/rebranding/dist/img/sprites/experian-global-sprite.png);
+      z-index: 0;
+      position: absolute;
+      right: 15px;
+      top: 8px;
+      background-position: -421px -51px;
+    }
+  }
+}
+
+.spinner {
+  -webkit-animation: rotator 1.4s linear infinite;
+  animation: rotator 1.4s linear infinite;
+}
+
+@-webkit-keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+
+@keyframes rotator {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+
+
+.path {
+  stroke-dasharray: 187;
+  stroke-dashoffset: 0;
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+  animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@-webkit-keyframes colors {
+  0% {
+    stroke: #26478d;
+  }
+
+  25% {
+    stroke: #ba2f7d;
+  }
+
+  50% {
+    stroke: #e2a235;
+  }
+
+  75% {
+    stroke: #adaf1e;
+  }
+
+  100% {
+    stroke: #26478d;
+  }
+}
+
+
+@keyframes colors {
+  0% {
+    stroke: #26478d;
+  }
+
+  25% {
+    stroke: #ba2f7d;
+  }
+
+  50% {
+    stroke: #e2a235;
+  }
+
+  75% {
+    stroke: #adaf1e;
+  }
+
+  100% {
+    stroke: #26478d;
+  }
+}
+
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 187;
+  }
+
+  50% {
+    stroke-dashoffset: 46.75;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  100% {
+    stroke-dashoffset: 187;
+    -webkit-transform: rotate(450deg);
+    transform: rotate(450deg);
+  }
+}
+
+
+section[ng-app=serSerasa] {
+  position: relative;
+}
+
+.loader.text-center {
+  padding: 10vh 0;
+  width: 100%;
+  z-index: 0;
+  background: rgba(255, 255, 255, 0.7);
+  height: 100%;
+  position: absolute;
+}
+
+.navbar.navbar-experian {
+  z-index: 2;
+}
+
+.carousel_blog--content {
+  width: 100%;
+  background: #000;
+  height: 100%;
+  position: relative;
+}
+
+.carousel_blog {
+  display: block;
+  width: 100%;
+  position: relative;
+}
+
+.carousel-caption {
+  text-align: left !important;
+  bottom: 15%;
+}
+
+.carousel_blog--content .img {
+  opacity: 0.75;
+  max-width: 100%;
+  height: 100%;
+  width: 100%;
+  display: block;
+  background-position: center top !important;
+}
+
+.slider {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background: #eee;
+  li {
+    display: none;
+  }
+}
+
+section.carousel_blog ul li {
+  width: 100%;
+  height: 100%;
+  &.active {
+    display: block !important;
+  }
+}
+
+.carousel_blog--item {
+  width: 100%;
+  display: block;
+  height: 460px;
+}
+
+.hide-loader {
+  display: none;
+}
+/***
+Breadcrumb
+**/
+.breadcrumb.breadcrumb-blog {
+  width: 100%;
+  padding: 0;
+}
+
+.breadcrumb-blog {
+  > li {
+    padding: 5px 20px;
+  }
+  .experian-light-blue-bg span {
+    color: #fff;
+  }
+  span {
+    font-size: 14px;
+  }
+  > li + li:before {
+    display: none;
+  }
+}
+
+.simple-post {
+  padding-top: 30px;
+}
+
+.content-blog {
+  table > {
+    thead > tr > th, tbody > tr > th, tfoot > tr > th, thead > tr > td, tbody > tr > td, tfoot > tr > td {
+      padding: 8px;
+      line-height: 1.5625;
+      vertical-align: top;
+      border-top: 1px solid #dddddd;
+    }
+    thead > tr > th {
+      vertical-align: bottom;
+      border-bottom: 2px solid #dddddd;
+    }
+    caption + thead > tr:first-child > th, colgroup + thead > tr:first-child > th, thead:first-child > tr:first-child > th, caption + thead > tr:first-child > td, colgroup + thead > tr:first-child > td, thead:first-child > tr:first-child > td {
+      border-top: 0;
+    }
+  }
+  ul {
+    li {
+      &:before {
+        background-image: url(https://s3-sa-east-1.amazonaws.com/campanha.serasaconsumidor.com.br/rebranding/dist/img/sprites/experian-global-sprite.png);
+        background-repeat: no-repeat;
+        text-indent: -999em;
+        display: inline-block;
+        background-position: -459px -66px;
+        content: "";
+        height: 10px;
+        position: absolute;
+        top: 7.5px;
+        left: 0;
+        width: 15px;
+      }
+      padding-left: 26px;
+      position: relative;
+    }
+    list-style-type: none;
+  }
+}
+/**
+Comments
+**/
+.comment-body > .comment-meta ~ p {
+  background: #e7e7e7;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 13px;
+}
+
+#commentform {
+  margin: 0;
+  float: left;
+}
+
+div#comment-status {
+  background: transparent !important;
+}
+
+#respond {
+  float: left;
+  width: 100%;
+}
+
+ol.comment-list {
+  float: right;
+  width: 100%;
+}
+
+.comment-author.vcard img, .children .comment-author.vcard:after {
+  top: 25px !important;
+}
+
+.comments-area .form-submit input {
+  border: 1px solid #004490 !important;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 16px !important;
+  padding: 8px 35px !important;
+  background: transparent !important;
+  color: #004490 !important;
+}
+/**
+panel blog
+**/
+.content-blog__video {
+  height: 380px;
+}
+
+.panel-mp-blog .social-media-share.open {
+  position: static;
+  a {
+    box-shadow: none;
+  }
+}
+
+.panel.panel-mp-blog {
+  padding: 0;
+  border: 0;
+}
+
+.panel-mp-blog {
+  .panel-body {
+    padding: 20px;
+  }
+  .panel-img {
+    height: 140px;
+    background: #eee;
+    overflow: hidden;
+  }
+  p {
+    font-size: 14px;
+    line-height: 16px;
+  }
+  h5 {
+    color: #555;
+    margin: 0 0 10px !important;
+  }
+}
+
+.thumbnail-post-body {
+  font-size: 15px;
+  min-height: 240px;
+}
+
+.thumbnail-post-header a:not(.btn) {
+  display: block;
+  overflow: hidden;
+  height: 210px;
+}
+
+.breadcrumb-blog {
+  .float-right {
+    padding: 6px 10px;
+  }
+  li a .sprite {
+    margin-right: 5px;
+    display: inline-block;
+    margin-bottom: -3px;
+  }
+}
+
+.breadcrumb.breadcrumb-blog > li:first-child {
+  border-radius: 5px 0px 0px 5px;
+}
+
+.breadcrumb-blog > li > a {
+  font-size: 15px;
+  display: inline-block;
+  padding: 0 5px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.breadcrumb.breadcrumb-blog .social-media-share {
+  top: 30px;
+  right: 10px;
+  left: inherit;
+}
+
+.breadcrumb-blog .thumbnail-post-share {
+  color: #555;
+  font-weight: 400;
+  float: right;
+}
+
+.simple-post__tags span {
+  text-transform: capitalize;
+}
+
+.transparent-bg {
+  background-color: transparent;
+}
+
+.panel-bullets {
+  .panel-bullets-item {
+    text-align: center;
+    position: relative;
+    top: -40px;
+    margin-bottom: -40px;
+  }
+  position: relative;
+}
+
+.bullet-item {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 20px;
+  color: #fff;
+  line-height: 50px;
+  vertical-align: top;
+}
+
+.panel-list-title .bullet-item {
+  margin: -50px auto 0;
+  float: none;
+}
+
+.list.list-none li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.text-center-mobile {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .panel-agencias .panel {
+    height: 330px;
+  }
+  .panel .panel-list-title .bullet-item {
+    position: static;
+    margin: 0 0 -50px 0px;
+    display: inline-block;
+  }
+  .panel-body .panel-list-title {
+    text-align: left;
+  }
+  .panel .panel-list-title .bullet-item ~ div:nth-child(2) {
+    margin-left: 65px;
+    min-height: 40px;
+    margin-top: -25px;
+  }
+  .panel-list-title {
+    text-align: center;
+    position: relative;
+    .bullet-item {
+      position: relative;
+      top: -60px;
+      margin: 0 auto -40px;
+      display: block;
+    }
+  }
+  ol.breadcrumb.breadcrumb-blog > li {
+    &:nth-child(2) {
+      width: 40%;
+      background: #f5f5f5;
+      padding: 6px 20px;
+      border-radius: 0px 4px 4px 0px;
+    }
+    &:nth-child(1) {
+      width: 60%;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .text-center-mobile {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .consultar-cpf .panel.panel-cp-steps {
+    height: 550px;
+  }
+}
+
+.breadcrumb-blog > li {
+  &:nth-child(2) {
+    width: 100%;
+    background: #f5f5f5;
+    padding: 10px 20px 5px;
+  }
+  &:nth-child(1) {
+    width: 100%;
+    border-radius: 5px;
+  }
+}
+
+.panel-content-full {
+  margin: 0 -20px 0;
+}
+
+ul.list-panel {
+  list-style: none;
+}
+
+.list-panel.list-panel-full li {
+  padding: 20px 100px;
+  background: #f4f4f4;
+  &:nth-child(odd) {
+    background: #fff;
+  }
+}
+.panel {
+    padding: 20px;
+}
+.panel-list-title {
+  text-align: center;
+}
+
+.p0 {
+  padding: 0;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
+
+@media (max-width: 768px){
+  #local-navigation .navbar-collapse.collapse {
+      transition: all .75s ease;
+      overflow: hidden;
+      height: 0;
+      border: 0;
+      display: block !important;
+  }
+}
+.container.in {
+    overflow: hidden;
+}
+
+#local-navigation .navbar-collapse ul.navbar-nav {
+    border-top: 1px solid #eee;
+}
+
+@media (min-width: 768px){
+    
+  #local-navigation .navbar-collapse.collapse {
+    display: none !important;
+  }
+  #local-navigation .in .navbar-collapse.collapse {
+    display: block !important;
+  }
+  .navbar-nav {
+    border: 0 !important;
+  }
+  .panel-phones {
+    height: 320px;
+  }  
+}
+
+@media screen and (min-width: 992px) {
+  body #local-navigation .dropdown:not(.m-dropdown) .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+@media screen and (min-width: 1200px) {
+  body #local-navigation .dropdown:not(.m-dropdown) .dropdown-menu {
+    visibility: hidden;
+    opacity: 0;
+  }
+  body #local-navigation .dropdown:not(.m-dropdown):hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+  }
+  #local-navigation .navbar-collapse.collapse {
+    display: block !important;
+  }
+  #local-navigation .open.dropdown:not(.m-dropdown):hover .dropdown-menu {
+    display: block;
+    visibility: visible;
+    padding-top: 20px;
+    opacity: 1;
+    transition-delay: 0s;
+    transition-duration: 0.3s;
+  }
+}
+.load-content>*:not(.loader){
+  visibility: hidden;
+  opacity: 0;
+}
+.list-check-outline {
+    list-style: none;
+    li{
+      margin-bottom: 10px; 
+      .sprite {
+          margin: 0 !important;
+      }
+    } 
+}
+.b0 {
+    border: 0;
+}
+.panel-list-title>.col-md-6:last-child {
+    border-left: 1px solid #ccc;
+    padding-left: 30px;
+}
+.banner-home-fr .h3:before {
+  content: "Grátis!";
+  position: absolute;
+  top: -50px;
+  color: #fff;
+  font-size: 20px;
+  background: url(https://s3-sa-east-1.amazonaws.com/campanha.serasaconsumidor.com.br/images/TAG_HOME.PNG) no-repeat left center;
+  width: 102px;
+  padding: 7px 15px;
+}
+.mt-10{
+  margin-top: -10px;
+}
+.mt-20{
+  margin-top: -20px;
+}
+.mt-30{
+  margin-top: -30px;
+}
+.mt-40{
+  margin-top: -40px;
+}
+.banner-feirao {
+    background-image: url("https://s3-sa-east-1.amazonaws.com/campanha.serasaconsumidor.com.br/rebranding/dist/img/banners/banner-feirao.png");
+}
+section.banner-feirao .h2 {
+    font-size: 54px;
+}
+.panel-image {
+    display: block;
+    height: 195px;
+    margin: -35px -35px 30px;
+    background: #ccc;
+}
+
+.panel-image-rj {
+    background-image: url("https://s3-sa-east-1.amazonaws.com/campanha.serasaconsumidor.com.br/images/bg-panel-feirao.jpg");
+    background-position: center 0px;
+}
+.panel-image-sp {
+    background-image: url(https://s3-sa-east-1.amazonaws.com/campanha.serasaconsumidor.com.br/images/bg-panel-feirao.jpg);
+    background-position: center -260px;
+}
+.panel-image-bh {
+    background-image: url(https://s3-sa-east-1.amazonaws.com/campanha.serasaconsumidor.com.br/images/bg-panel-feirao.jpg);
+    background-position: center -520px;
+}
+
+
+
+
+.list-follow span {
+    color: #555
+}
+
+.list-follow>div {
+    padding: 10px 20px 10px 0!important;
+    float: left;
+    width: 50%
+}
+
+.list-follow>div .icon {
+    display: block;
+    width: 55px;
+    height: 55px;
+    float: left;
+    background: url(https://s3-sa-east-1.amazonaws.com/campanha.serasaconsumidor.com.br/images/sprite-feirao.png) no-repeat;
+    margin: 0 10px 0 0
+}
+
+.steps-items>div .icon {
+    background: url(https://s3-sa-east-1.amazonaws.com/campanha.serasaconsumidor.com.br/images/sprite-feirao.png) no-repeat!important
+}
+
+.steps-items>div:nth-child(1) .icon {
+    background-position: -4px -464px!important
+}
+
+.steps-items>div:nth-child(2) .icon {
+    background-position: -4px -322px!important
+}
+
+.steps-items>div:nth-child(3) .icon {
+    background-position: -4px -536px!important
+}
+
+.list-follow>div:nth-child(1) .icon {
+    background-position: -2px -72px
+}
+
+.list-follow>div:nth-child(2) .icon {
+    background-position: -2px -230px
+}
+
+.list-follow>div:nth-child(3) .icon {
+    background-position: -10px -154px
+}
+
+.list-follow>div:nth-child(4) .icon {
+    background-position: -2px -384px
+}
+
+
+
+
