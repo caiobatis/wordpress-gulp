@@ -1,16 +1,17 @@
 # wordpress-gulp
 **Tema WordPress usando Gulp.JS  - WordPress Theme using Gulp.JS**
 
-Tema WordPress usando o [GulpJS](http://gulpjs.com/). Framework [MDL](https://getmdl.io/) para estilo.
-Estou usando apenas o gulp-sass e gulp-uglify. Pode-se utilizar todos os outros plugins do gulp para o tema WordPress. 
+WordPress Theme using [GulpJS](http://gulpjs.com/). Framework [MDL](https://getmdl.io/) for style.
+I'm just using gulp-sass and gulp-uglify. You can use all other gulp plugins for the WordPress theme.
 
 ## Usage
 
-Clone o projeto para o diretorio:
+Clone the project to the directory:
 ```html
-raiz/wp-content/themes/wordpress-gulp
+root/wp-content/themes/wordpress-gulp
 ```
-Ative o tema.
+Activate the theme.
+
 
 NPM:
 
