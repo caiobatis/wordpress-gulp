@@ -1,6 +1,0 @@
-<?php
-/**
- * @package wordpress-gulp
- */
-?>
-
